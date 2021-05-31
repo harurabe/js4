@@ -6,7 +6,7 @@
 </head>
     <body>
 
-        <div id='openingSlide' dstyle='display:'>
+        <div id='openingSlide' style='display:'>
             <h1>ようこそ</h1>
             <hr>
             <div>以下のボタンをクリック</div>
@@ -32,7 +32,7 @@
         </div>
  
     <script>
-    var score = 0;
+    let score = 0;
 
     const startBtn = document.getElementById('startBtn');
     startBtn.addEventListener('click', startQuiz);
@@ -55,7 +55,6 @@
     }
 
     function buildQuiz(json) {
-        // 各設問を表すオブジェクトを作成するべき
         const quizContainer = document.getElementById('quizContainer');
 
         json.results.forEach (
