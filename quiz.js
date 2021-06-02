@@ -77,8 +77,7 @@ function buildQuiz(json) {
                     indexcount += 1;
                 }
 
-                linebreak = document.createElement('br');
-                divAnswers.appendChild(linebreak);
+                divAnswers.appendChild(document.createElement('br'));
             });
 
             divContainer.appendChild(divHeader);
@@ -116,7 +115,7 @@ function readyQuiz(){
 
 function proceedQuiz(e){
     score += parseInt(e.target.value);
-    quizNumber = parseInt(e.target.id);
+    let quizNumber = parseInt(e.target.id);
 
     const q = document.getElementsByClassName('quiz');
     q[quizNumber].style.display = 'none';
