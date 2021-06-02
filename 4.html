@@ -88,7 +88,7 @@
                 //回答作成順をシャッフル (c = 正解, i0 = 0番目の不正解 etc)
                 const randomOrder = ['c', 'i', 'i', 'i'];
                 shuffle(randomOrder);
-                var indexcount = 0;
+                let indexcount = 0;
 
                 randomOrder.forEach ((value, orderIndex) => {
                     if (value === 'c') {
@@ -144,8 +144,8 @@
         const loadingSlide = document.getElementById('loadingSlide');
         loadingSlide.style.display = 'none';       
 
-        const q = document.getElementsByClassName('quiz');
-        q[0].style.display = '';
+        const quiz = document.getElementsByClassName('quiz');
+        quiz[0].style.display = '';
     }
 
     function proceedQuiz(e){
